@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -12,9 +12,12 @@
             android:id="@+id/txtCount"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="?attr/colorPrimary"
+            android:gravity="center"
             android:text="54"
             android:textAlignment="center"
-            android:gravity="center"
+            android:textColor="?attr/colorSecondary"
             android:textSize="150sp"
             app:layout_constraintBottom_toTopOf="@+id/btnCountUp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +32,9 @@
             android:id="@+id/btnToast"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="TOAST"
+            android:textColor="?attr/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +43,9 @@
             android:id="@+id/btnCountUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="COUNT UP"
+            android:textColor="?attr/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/btnCoundDown"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -47,7 +54,9 @@
             android:id="@+id/btnCoundDown"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondary"
             android:text="COUNT DOWN"
+            android:textColor="?attr/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
